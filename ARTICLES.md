@@ -7,8 +7,16 @@ Submit a new article for discussion by using the following format:
 - your 1-2 sentence takeaway / description
 ```
 
+Place your article suggestions below.  When you create the PR on github include the 'article' label.
+
+**Article Suggestions**
+
+
+**1/22/2019 - Lecture #2**
+
 
 **1/15/2019 - Lecture #1**
+
 
 [Which Company Has The Best Code Quality Between Google, Apple, Microsoft and Amazon?](https://www.forbes.com/sites/quora/2019/01/02/which-company-has-the-best-code-quality-between-google-apple-microsoft-and-amazon/#518d8c49d4e7)
 - Great article which looks at the differences between these 4 monster companies.  Comparing what they value in terms of speed versus quality.
