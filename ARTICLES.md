@@ -18,3 +18,6 @@ Submit a new article for discussion by using the following format:
 
 [Why Your GitHub Repo and Code Need a README](https://blogs.cisco.com/developer/your_repo_readme)
 - Interesting algology about why your code on GitHub needs a README file. Without a README file, you are expecting the consumer of your code to realize your vision for it and its intricate workings by only reading the code.
+
+[Github wants to improve Open Source sustainability](https://hub.packtpub.com/github-wants-to-improve-open-source-sustainability-invites-maintainers-to-talk-about-their-oss-challenges/)
+-Interesting idea asking people to donate to open source projects so that Open Source contributers can devote more time to the projects. 
