@@ -8,7 +8,7 @@ Run the `krun.sh` script with the following parameters to compile and run the pr
 2. path to output `.jar` file
 3. the maximum value
 
-`$ ./krun.sh Fizzbuzz.kt lmao.jar 17`
+`./krun.sh Fizzbuzz.kt Fizzbuzz.jar 17`
 
 ## Compile from source
 
