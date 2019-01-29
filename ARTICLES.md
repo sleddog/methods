@@ -1,7 +1,7 @@
 # Articles
 
 Submit a new article for discussion by using the following format:
-
+:octocat:
 ```
 [article title](link to the article)
 - your 1-2 sentence takeaway / description
