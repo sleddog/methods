@@ -4,4 +4,5 @@ Below is a list of the favorite movies among the group.  Submit your favorite mo
 
 **Spring 2019**
 
+Raiders of the Lost Ark
 The Shawshank Redemption
