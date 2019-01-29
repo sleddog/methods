@@ -9,3 +9,5 @@ Breakdown
 Pulp Fiction
 
 The Shawshank Redemption
+
+The Lord of the Rings Trilogy
