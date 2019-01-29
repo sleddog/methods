@@ -26,3 +26,6 @@ Place your article suggestions below.  When you create the PR on github include 
 
 [Why Your GitHub Repo and Code Need a README](https://blogs.cisco.com/developer/your_repo_readme)
 - Interesting algology about why your code on GitHub needs a README file. Without a README file, you are expecting the consumer of your code to realize your vision for it and its intricate workings by only reading the code.
+
+[The trendy five: Wrapping up the year with the best GitHub repos in December 2018] (https://jaxenter.com/github-trending-dec-2018-154100.html)
+-Article that includes five of the most popular public repos; definitely some interesting finds.
