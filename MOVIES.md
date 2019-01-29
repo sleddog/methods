@@ -4,4 +4,6 @@ Below is a list of the favorite movies among the group.  Submit your favorite mo
 
 **Spring 2019**
 
-The Shawshank Redemption
+* The Fast and the Furious
+* The Shawshank Redemption
+* The Lord of the Rings Trilogy
