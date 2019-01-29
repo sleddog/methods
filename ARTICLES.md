@@ -27,5 +27,12 @@ Place your article suggestions below.  When you create the PR on github include 
 [Finding a Computer Science Job](https://www.computerscience.org/resources/jobs-in-computer-science/)
 - A quick overview of things to think about when looking for a job in Computer Science. Includes some helpful tips on resume writing and int  erview techniques.
 
+
+[Why Your GitHub Repo and Code Need a README](https://blogs.cisco.com/developer/your_repo_readme)
+- Interesting algology about why your code on GitHub needs a README file. Without a README file, you are expecting the consumer of your code to realize your vision for it and its intricate workings by only reading the code.
+
+[Finding a Computer Science Job](https://www.computerscience.org/resources/jobs-in-computer-science/)
+- A quick overview of things to think about when looking for a job in Computer Science. Includes some helpful tips on resume writing and int  erview techniques.
+
 [Why Your GitHub Repo and Code Need a README](https://blogs.cisco.com/developer/your_repo_readme)
 - Interesting algology about why your code on GitHub needs a README file. Without a README file, you are expecting the consumer of your code to realize your vision for it and its intricate workings by only reading the code.
