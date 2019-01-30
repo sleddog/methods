@@ -29,6 +29,3 @@ Place your article suggestions below.  When you create the PR on github include 
 
 [Why Your GitHub Repo and Code Need a README](https://blogs.cisco.com/developer/your_repo_readme)
 - Interesting algology about why your code on GitHub needs a README file. Without a README file, you are expecting the consumer of your code to realize your vision for it and its intricate workings by only reading the code.
-
-[Why Use a GUI vs the Command Line for Git](codehangar.io/git-gui-vs-comand-line/)
-- AN interesting article about the pros and cons of using a GUI vs the command line with Git.
