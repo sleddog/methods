@@ -29,3 +29,6 @@ Originally established in Jerry Weinberg's book The Psychology of Computer Progr
 
 [The Great CEO Within](https://docs.google.com/document/d/1ZJZbv4J6FZ8Dnb0JuMhJxTnwl-dwqx5xl0s65DE3wO8/preview#)
 - Fantastic overview of almost every topic a CEO will encounter at a tech startup.  Should be applicable to anyone at the company especially for startups.
+
+[Why Use a GUI vs the Command Line for Git](codehangar.io/git-gui-vs-command-line/)
+- An intersting article about the pros and cons of using a GUI vs the command with Git.
