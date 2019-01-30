@@ -8,5 +8,4 @@ Below is a list of the favorite movies among the group.  Submit your favorite mo
 * The Fast and the Furious
 * The Lord of the Rings Trilogy
 * The Shawshank Redemption
-* Predestination
 * Stand and Deliver
