@@ -24,8 +24,11 @@ public class Homework2 {
 		int i = n;
 		int j = 1;
 		do{
-			if(j%3 == 0){ //check if # is divisible by 3
-				System.out.println("Fizz");				
+			if(j%3 == 0 && j%5 == 0){ //check if # is divisible by 3 and 5
+				System.out.println("FizzBuzz");				
+			}
+			else if(j%3 == 0) { //check if # is divisible by 3
+			        System.out.println("Fizz");
 			}
 			else if(j%5 == 0){ //check if # is divisible by 5
 				System.out.println("Buzz");
