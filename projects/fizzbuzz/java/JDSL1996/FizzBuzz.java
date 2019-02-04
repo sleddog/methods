@@ -22,7 +22,7 @@ public class FizzBuzz {
                 Scanner in = new Scanner(System.in);
                 //.. with a given prompt
                 System.out.println("Give me an n > 0 (no decimals). To make it interesting make it greater that 3...");
-                System.out.println("If your done type in an n < 0 to exit");
+                System.out.println("If your done type in 0 to exit");
                 int n = in.nextInt();
 
                 if(n<0){
