@@ -2,8 +2,7 @@
 
 int main()
 {
-	int input;
-	input = printf("Enter a number greater than 0: ");
+	printf("Enter a number greater than 0: ");
 	int num = 0;
 	scanf("%d", &input);
 	for(num = 1; num <= input; num++)
