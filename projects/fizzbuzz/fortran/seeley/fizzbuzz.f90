@@ -9,24 +9,26 @@ program fizzbuzz
    !get integer up to which FizzBuzz will go
    print *, "Please enter a number up to which FizzBuzz shall be played:  "
    read *, n
-   print *, "You chose:  ", n
+   print *, "You have chosen:  ", n
+   if (n > 0) then 
+      !print each number appropriately
+      do i=1, n
+         stringout = ""
+         if (mod(i, 3) == 0) then
+            stringout = trim(stringout) // "Fizz"
+         endif
+         if (mod(i, 5) == 0) then
+            stringout = trim(stringout) // "Buzz"
+         endif
+         if (stringout == "") then
+            write (stringout, "(1i4)") i
+         endif
 
-   !print each number appropriately
-   do i=1, n
-      stringout = ""
-      if (mod(i, 3) == 0) then
-         stringout = trim(stringout) // "Fizz"
-      endif
-      if (mod(i, 5) == 0) then
-         stringout = trim(stringout) // "Buzz"
-      endif
-      if (stringout == "") then
-         write (stringout, "(1i4)") i
-      endif
-
-      print *, stringout
-   
-   end do
-   
+         print *, stringout
+      
+      end do
+   else
+      print *, "Error: input was not a positive integer.  Please run again."
+   endif
 
 end program fizzbuzz
