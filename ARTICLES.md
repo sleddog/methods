@@ -10,7 +10,7 @@ Submit a new article for discussion by using the following format:
 Place your article suggestions at the end of this list.  When you create the PR on github include the 'article' label.
 
 [The Ten Commandments of Egoless Programming](https://blog.codinghorror.com/the-ten-commandments-of-egoless-programming/)
-Originally established in Jerry Weinberg's book The Psychology of Computer Programming, these guidelines are great to follow when performing a code review.
+- Originally established in Jerry Weinberg's book The Psychology of Computer Programming, these guidelines are great to follow when performing a code review.
 
 [Why Your GitHub Repo and Code Need a README](https://blogs.cisco.com/developer/your_repo_readme)
 - Interesting algology about why your code on GitHub needs a README file. Without a README file, you are expecting the consumer of your code to realize your vision for it and its intricate workings by only reading the code.
