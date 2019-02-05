@@ -7,6 +7,12 @@ To run this program, open your terminal of choice, and:
 git clone git@github.com:wizmariefa/methods.git
 git checkout -b "my-new-branch"
 ```
+**NOTE**: If you are running this program on windows, SSH is not installed natively. 
+You can clone the repo using the command: 
+```
+git clone https://github.com/wizmariefa/methods.git
+```
+
 2. Navigate to the `projects/python/wizmariefa` directory.
 3. Run the following command in the `projects/python/wizmariefa` directory:
 ```
