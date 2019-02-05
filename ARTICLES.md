@@ -11,6 +11,8 @@ Place your article suggestions below.  When you create the PR on github include 
 
 **Article Suggestions**
 
+[Building privacy right into software code](https://theconversation.com/building-privacy-right-into-software-code-67623)
+Taking the task of privacy protection away from humans and entrusting it to the computers.
 
 **1/29/2019 - Lecture #3**
 
