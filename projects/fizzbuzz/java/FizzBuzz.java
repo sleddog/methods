@@ -15,21 +15,24 @@ public class FizzBuzz
         //Print the numbers
         for (int i = 1; i <= amount; i++)
         {
-            //If number is divisible by 3
-            if (i%3 == 0)
-            {
-                System.out.print ("Fizz");
-            }
-            //If number is divisible by 5
-            if (i%5 == 0)
-            {
-                System.out.print ("Buzz");
-            }
             //If not divisible by 3 or 5
-            if (i%3 != 0 && i%5 != 0)
+             if (i%3 != 0 && i%5 != 0)
             {
                 System.out.print (i);
             }
+            else
+            {
+                //If number is divisible by 3
+                if (i%3 == 0)
+                {
+                    System.out.print ("Fizz");
+                }
+                //If number is divisible by 5
+                if (i%5 == 0)
+                {
+                    System.out.print ("Buzz");
+                }
+            }   
             System.out.println("");
         }
     }
