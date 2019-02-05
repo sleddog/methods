@@ -11,6 +11,11 @@ public class FizzBuzz {
 		fizzBuzz(input);
 	}
 
+	/*
+	The fizzBuzz method runs through the number printing on a new line each time.
+	We start by testing if it's divisible by both 3 and 5, then we go through to see if it's
+	divisible by either 3 or 5.
+	*/
 	public static void fizzBuzz(int n) {
 		for(int i = 1; i <= n; i++)
 		{	
