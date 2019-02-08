@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class FizzBuzz {
     public static void main(String args[]){
         /*
-            TODO: Define a function that will do the following:
+            Done: Define a function that will do the following:
                 Given input (n), print the numbers from 1 to n
                 If the number is a multiple of 3 do not print the number, instead print 'Fizz'
                 If the number is a multiple of 5 do not print the number, instead print 'Buzz'
