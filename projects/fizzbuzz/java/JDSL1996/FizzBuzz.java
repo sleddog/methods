@@ -12,7 +12,14 @@ public class FizzBuzz {
                 Given input (n), print the numbers from 1 to n
                 If the number is a multiple of 3 do not print the number, instead print 'Fizz'
                 If the number is a multiple of 5 do not print the number, instead print 'Buzz'
+
+            TODO: 
+                    Modify program to return “Bazz” when the number is a multiple of 7
+                    Add unit tests that validate the function behaves as expected
+                    Modify the README to indicate how to run the tests
          */
+
+        Game g = new Game();
         boolean done = false;
         //while they didnt decide to quit (or type in a negative to try and break it)
         while(!done){
@@ -35,7 +42,7 @@ public class FizzBuzz {
                 }
                 else{
                     //the meat
-                    fizz(n);
+                    g.fizz(n);
                 }
             }
             //say that the number was wrong
@@ -49,29 +56,50 @@ public class FizzBuzz {
             }
         }
     }
+}
+
+class Game{
     //the solution (meat) of the problem
-    private static void fizz(int n){
+    public void fizz(int n){
         //start from the bottom
         int currNum = 1;
         //go to n
-        while(currNum <= n){
-            //if its a multiple of 3
-            if(currNum%3 == 0){
-                System.out.print("Fizz");
+        for(currNum = 1; currNum <= n; currNum++){
+            String out = "";
+
+            if(three(currNum)){
+                out = out.concat("Fizz");
+                // System.out.println("three");
+            }   
+            if(five(currNum)){
+                out = out.concat("Buzz");  
+                // System.out.println("five");  
+            }   
+            if(seven(currNum)){
+                out = out.concat("Bazz");
+                System.out.println(out.length());
             }
-            //and or if its a multiple of 5
-            if(currNum%5 == 0){
-                System.out.print("Buzz");
+            
+            if(out.isEmpty()){
+                out = String.valueOf(currNum);
             }
-            //or if its not a multiple of 3 or 5
-            if(currNum%3 != 0 && currNum%5 != 0){
-                System.out.print(currNum);
-            }
+
             //give it some space and incriment
-            System.out.println();
-            currNum++;
+            System.out.println(out);
         }
         //give it some more space
         System.out.println();
+    }
+
+    private boolean three(int num){
+        return num%3 == 0;
+    }
+
+    private boolean five(int num){
+        return num%5 == 0;
+    }
+
+    private boolean seven(int num){
+        return num%7 == 0;
     }
 }
