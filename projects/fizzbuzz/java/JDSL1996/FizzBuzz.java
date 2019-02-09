@@ -13,20 +13,27 @@ public class FizzBuzz {
                 If the number is a multiple of 3 do not print the number, instead print 'Fizz'
                 If the number is a multiple of 5 do not print the number, instead print 'Buzz'
 
-            TODO: 
-                    Modify program to return “Bazz” when the number is a multiple of 7
-                    Add unit tests that validate the function behaves as expected
-                    Modify the README to indicate how to run the tests
+            Done: 
+                Modify program to return "Bazz" when the number is a multiple of 7
          */
 
         Game g = new Game();
         boolean done = false;
-        //while they didnt decide to quit (or type in a negative to try and break it)
+        //while they didnt decide to quit
         while(!done){
-        //catch invalid inputs (catch everything but expecting invalid inputs)
-            //get user inputs...
-            Scanner in = new Scanner(System.in);
-            try{
+            try {
+                /*
+                    get user input
+
+                    ideally this should be closed at the end but that also closes system.in for the program
+                    possible fixes (as found online) are:
+                        create a wrapper for system.in that gets closed instead
+                        close at the end of the program 
+                            (which would be the end of main but the scanner is in this class in a loop so id need to move the scanner decloration taking more memory)
+                        force the program to ignore the warnings
+                        or just ignore it since its a small program for school where the resource potentially leaked is an integer that doesnt mean anything (i chose this one)
+                */  
+                Scanner in = new Scanner(System.in);
                 //.. with a given prompt
                 System.out.println("Give me an n > 0 (no decimals). To make it interesting make it greater that 3...");
                 System.out.println("If your done type in 0 to exit");
@@ -34,9 +41,9 @@ public class FizzBuzz {
 
                 if(n<0){
                     //usefull error message
-                    throw new ArithmeticException("Thats not a valid number!"); 
+                    throw new ArithmeticException("Thats not a valid number!");
                 } else if(n == 0){
-                    //finis the program uppon request
+                    //finish the program uppon request
                     done = true;
                     continue;
                 }
@@ -44,18 +51,10 @@ public class FizzBuzz {
                     //the meat
                     g.fizz(n);
                 }
-            }
-            //say that the number was wrong
-            catch(ArithmeticException e){
-                System.out.println(e.getMessage());
-                System.out.println();
-            }
-            //say that an error occured
+            }//say that an error occured
             catch(Exception e){
-                System.out.println("Well that didn't work. Try something else!\n");
-            }
-            finally{
-                in.close();
+                System.out.println("Well that didn't work. Try something else!");
+                System.out.println("Error caught: " + e + "\n");
             }
         }
     }
@@ -68,41 +67,51 @@ class Game{
         int currNum = 1;
         //go to n
         for(currNum = 1; currNum <= n; currNum++){
-            String out = "";
+            System.out.println(out(currNum));
+        }
+        //give it some space
+        System.out.println();
+    }
 
-            if(three(currNum)){
-                out = out.concat("Fizz");
-                // System.out.println("three");
-            }   
-            if(five(currNum)){
-                out = out.concat("Buzz");  
-                // System.out.println("five");  
-            }   
-            if(seven(currNum)){
-                out = out.concat("Bazz");
-                System.out.println(out.length());
-            }
+    //line by line answer
+    private String out(int currNum){
+        String out = "";
+
+            out = out.concat(three(currNum));
+            
+            out = out.concat(five(currNum));  
+            
+            out = out.concat(seven(currNum));
             
             if(out.isEmpty()){
                 out = String.valueOf(currNum);
             }
 
-            //give it some space and incriment
-            System.out.println(out);
+            //answer
+            return out;
+    }
+
+    //divisible by 3
+    private String three(int num){
+        if(num%3 == 0){
+            return "Fizz";
         }
-        //give it some more space
-        System.out.println();
+        return "";
     }
 
-    private boolean three(int num){
-        return num%3 == 0;
+    //divisible by 5
+    private String five(int num){
+        if(num%5 == 0){
+            return "Buzz";
+        }
+        return "";
     }
-
-    private boolean five(int num){
-        return num%5 == 0;
-    }
-
-    private boolean seven(int num){
-        return num%7 == 0;
+    
+    //divisible by 7
+    private String seven(int num){
+        if(num%7 == 0){
+            return "Bazz";
+        }
+        return "";
     }
 }
