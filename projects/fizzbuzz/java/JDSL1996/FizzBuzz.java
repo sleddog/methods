@@ -24,9 +24,9 @@ public class FizzBuzz {
         //while they didnt decide to quit (or type in a negative to try and break it)
         while(!done){
         //catch invalid inputs (catch everything but expecting invalid inputs)
+            //get user inputs...
+            Scanner in = new Scanner(System.in);
             try{
-                //get user inputs...
-                Scanner in = new Scanner(System.in);
                 //.. with a given prompt
                 System.out.println("Give me an n > 0 (no decimals). To make it interesting make it greater that 3...");
                 System.out.println("If your done type in 0 to exit");
@@ -53,6 +53,9 @@ public class FizzBuzz {
             //say that an error occured
             catch(Exception e){
                 System.out.println("Well that didn't work. Try something else!\n");
+            }
+            finally{
+                in.close();
             }
         }
     }
