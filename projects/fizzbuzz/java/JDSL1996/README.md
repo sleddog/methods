@@ -16,6 +16,7 @@ Included in this project is a test suite that runs trough a number of tests to c
 
 * Java Development kit to compile and run java code (I'm unsure of oldest possible vertion but I am running JDK 11 available [here](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html))
 * JUnit which can be found [here](https://www.tutorialspoint.com/junit/junit_environment_setup.htm) at tutorials point with instructions (The actual JUnit instructions from their github page do not seem to actually get JUnit working so these instructions are better in my opinion)
+  * **NOTE:** The tutorial is not consistent with file names and files downloaded, be sure to use the names of the files you actually have **not** the names given in the tutorial.
 
 ### Command Prompt Execution
 
