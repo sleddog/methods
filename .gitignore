@@ -1,1 +1,7 @@
 .idea
+
+# Visual studio Code: json files created when a build is made
+.vscode
+
+# Java class files
+.class
