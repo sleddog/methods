@@ -1,4 +1,4 @@
-<!-- TODO: Modify the README to indicate how to run the tests -->
+<!-- Done: Modify the README to indicate how to run the tests -->
 # FizzBuzz in Java
 
 Created by Joshua Stephenson-Losey
