@@ -9,3 +9,4 @@ Below is a list of the favorite movies among the group.  Submit your favorite mo
 * The Lord of the Rings Trilogy
 * The Shawshank Redemption
 * Kingsman
+* Stand and Deliver
