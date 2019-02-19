@@ -16,14 +16,14 @@ fun checkFizz(input: Int): String {
 }
 
 fun testCheckFizz() {
-    assert("1" == checkFizz(1))
-    assert("Fizz" == checkFizz(3))
-    assert("Buzz" == checkFizz(5))
-    assert("Bazz" == checkFizz(7))
-    assert("FizzBuzz" == checkFizz(15))
-    assert("FizzBazz" == checkFizz(21))
-    assert("BuzzBazz" == checkFizz(35))
-    assert("FizzBuzzBazz" == checkFizz(105))
+    assert(checkFizz(1) == "1")
+    assert(checkFizz(3) == "Fizz")
+    assert(checkFizz(5) == "Buzz")
+    assert(checkFizz(7) == "Bazz")
+    assert(checkFizz(15) == "FizzBuzz")
+    assert(checkFizz(21) == "FizzBazz")
+    assert(checkFizz(35) == "BuzzBazz")
+    assert(checkFizz(105) == "FizzBuzzBazz")
 }
 
 fun main(args: Array<String>) {
