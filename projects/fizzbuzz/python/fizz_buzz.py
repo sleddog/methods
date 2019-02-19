@@ -30,23 +30,22 @@ def fizz_buzz(num):
         string += "\n"
     return string;
 
+
 def main():
-    print("Type in a value or use negative one to quit:")
-    i = int(input())
-    print("Your value is " + str(i))
-    if (i > 0 and i < 100):
-        n = fizz_buzz(i)
-        print(n)
-    else:
-        print("Quit")
+    Quit = False;
+    while Quit == False:
+        print("Type in a value between 1 and 100. Use -1 to quit --->")
+        i = int(input())
+        print("Your value is " + str(i))
+        if (i > 0 and i < 100):
+            n = fizz_buzz(i)
+            print(n)
+            Quit = True;
+        if (i == -1):
+            print("Quit");
+            Quit = True; 
+        elif:
+            print("Try another number")
 
 
-main()        
-
-#if __name__ == '__main__':
-    #i = int(input("Type in a value or use negative one to quit:"))
-    #if (i > 0 and i < 100):
-        #n = fizz_buzz(i)
-        #print(n)
-    #else:
-        #print("Quit")
+main() 
