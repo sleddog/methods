@@ -1,11 +1,11 @@
 //Marielle Korringa
-//Homework 2
-//Enter an integer to run code. 
+//Homework 4
+
 
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class Homework2 {
+public class Homework4 {
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);  
 		System.out.println("Enter a number: ");
@@ -18,26 +18,33 @@ public class Homework2 {
 		reader.close();
 	}
 	
-	public static void FizzBuzz(int n){
+	public static String FizzBuzz(int n){
+		String check = "default";
+		System.out.println("");
 		System.out.println("w/ n = "+n);
 		System.out.println();
 		int i = n;
 		int j = 1;
 		do{
-			if(j%3 == 0 && j%5 == 0){ //check if # is divisible by 3 and 5
-				System.out.println("FizzBuzz");				
+			if(j%3 == 0){ //check if # is divisible by 3
+				System.out.print("Fizz");	
+				check = "Fizz";
 			}
-			else if(j%3 == 0) { //check if # is divisible by 3
-			        System.out.println("Fizz");
+			if(j%5 == 0){ //check if # is divisible by 5
+				System.out.print("Buzz");
+				check = "Buzz";
 			}
-			else if(j%5 == 0){ //check if # is divisible by 5
-				System.out.println("Buzz");
+			if(j%7 == 0){ //check if # is divisible by 7
+				System.out.print("Bazz");
+				check = "Bazz";
 			}
-			else{ //print all other #
-				System.out.println(j);
+			if (j%3 != 0 && j%5 != 0 && j%7 != 0){ //print all other #
+				System.out.print(j);
 			}
 			++j;
 			--i;
+			System.out.println("");
 		}while(i > 0);
+		return check;
 	}
 }
