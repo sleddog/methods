@@ -9,12 +9,12 @@ public class RostTest {
 
     public static void main(String[] args) {
         RostTest test = new RostTest();
-        test.result();
+        test.result(Integer.valueOf(args[0]));
     }
 
     @Test
-    public void result() {
-        ArrayList<String> test = Rost.result(25);
+    public void result(int cap) {
+        ArrayList<String> test = Rost.result(cap);
         try {
             for (String line : test) {
                 int num = test.indexOf(line) + 1;
