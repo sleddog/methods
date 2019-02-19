@@ -66,6 +66,7 @@ $ mkdir build
 $ cd build
 $ cmake ..
 $ cmake --build .
+$ make install
 ```
 
 After the unit testing framework is successfully installed:
