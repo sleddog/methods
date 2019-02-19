@@ -24,5 +24,8 @@ Place your article suggestions at the end of this list.  When you create the PR 
 [Why Use a GUI vs the Command Line for Git](codehangar.io/git-gui-vs-command-line/)
 - An intersting article about the pros and cons of using a GUI vs the command with Git.
 
+[Linus Torvalds' BitKeeper blunder](https://www.infoworld.com/article/2670360/operating-systems/linus-torvalds--bitkeeper-blunder.html)
+- Old article(2005), but discusses the incident with a closed-source version control system that fueled the creation of git. Article is fairly surface-level but explains the situation fairly well and helps to demonstrate the benefits of FOSS.
+
 [The trendy five: Wrapping up the year with the best GitHub repos in December 2018](https://jaxenter.com/github-trending-dec-2018-154100.html)
 - Article that includes five of the most popular public repos; definitely some interesting finds.
