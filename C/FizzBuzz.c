@@ -3,13 +3,11 @@
 
 char output[12];
 
-void FBB()
+void FBB(int var)
 {
-	printf("enter a number greater than 0: ");
-	int num = 0, input, found = 0;
-	scanf("%d", &input);
+	int found, num;
 	char numAsString [2];//for those iterations that aren't divisible by 3, 5, or 7
-	for(num = 1; num <= input; num++)
+	for(num = 1; num <= var; num++)
 	{
 		found = 0;
 		memset(&output[0], 0, sizeof(output));
@@ -43,7 +41,16 @@ void FBB()
 #ifndef UnitTest
 int main()
 {
-	FBB();
+
+	int num = 0, input;
+	while(num <= 0)
+	{
+		printf("enter a number greater than 0: ");
+		scanf("%d", &input);
+		if(input > 0)
+			num = input;
+	}
+	FBB(num);
 	return 0;
 }
 #endif
