@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo 'Starting unit testing of FizzBuzzBazz...'
-echo 'Building building the tests...'
+echo 'Building the tests...'
 export LD_LIBRARY_PATH=/usr/local/lib
 gcc -o runTests unitTest.c -lcriterion
 
