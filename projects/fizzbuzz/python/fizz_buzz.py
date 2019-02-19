@@ -44,7 +44,7 @@ def main():
         if (i == -1):
             print("Quit");
             Quit = True; 
-        elif:
+        else:
             print("Try another number")
 
 
