@@ -10,10 +10,9 @@ python fizzBuzz.py
 4.) Follow the user input prompt.
 
 UNIT TEST:
-1.) Verify Pythin is intalled on your machine.
+1.) Verify Python is intalled on your machine.
 2.) Verify your PATH variable is set correctly to run the 'python' command
 3.) Run the following:
 ```
-python fizzBuzz.py test
+python fizzBuzz_test.py
 ```
-This runs the unit test section of the program by taking in the 'test' command line argument. 
