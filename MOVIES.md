@@ -4,7 +4,11 @@ Below is a list of the favorite movies among the group.  Submit your favorite mo
 
 **Spring 2019**
 
+* Monty Python and the Holy Grail
+* Shrek
 * The Fast and the Furious
 * The Iron Giant
-* The Shawshank Redemption
 * The Lord of the Rings Trilogy
+* The Shawshank Redemption
+* Kingsman
+* Stand and Deliver
