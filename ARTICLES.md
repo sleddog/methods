@@ -7,6 +7,8 @@ Submit a new article for discussion by using the following format:
 - your 1-2 sentence takeaway / description
 ```
 
+**1/29/2019 - Lecture #3**
+
 Place your article suggestions at the end of this list.  When you create the PR on github include the 'article' label.
 
 [The Ten Commandments of Egoless Programming](https://blog.codinghorror.com/the-ten-commandments-of-egoless-programming/)
@@ -29,3 +31,6 @@ Place your article suggestions at the end of this list.  When you create the PR 
 
 [The trendy five: Wrapping up the year with the best GitHub repos in December 2018](https://jaxenter.com/github-trending-dec-2018-154100.html)
 - Article that includes five of the most popular public repos; definitely some interesting finds.
+
+[Building privacy right into software code](https://theconversation.com/building-privacy-right-into-software-code-67623)
+Taking the task of privacy protection away from humans and entrusting it to the computers.
