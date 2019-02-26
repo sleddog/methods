@@ -1,0 +1,29 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Fizzbuzz Project5 Application
+  description: fizzbuzzbazz microservice 
+  version: 1.0.0
+paths:
+  /:
+    get:
+      summary: print the output of running fizzbuzzbazz 
+      parameters:
+        - name: n
+          in: query
+          description: input number given to fizzbuzzbazz
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: JSON output of fizzbuzzbazz
+          content:
+	    application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+              items:
+                type: string
+		
