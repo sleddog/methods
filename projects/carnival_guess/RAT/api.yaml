@@ -1,0 +1,41 @@
+openapi: 3.0.1
+info:
+  title: RAT_Carnival_Guess
+  description: guess_A_Number
+  version: '0.1'
+servers:
+  - url: 'http://www.timothyparrish.com'
+paths:
+  /:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: ''
+          in: query
+          allowEmptyValue: true
+          schema:
+            type: string
+        - name: myvar
+          in: query
+          schema:
+            type: string
+          example: '27'
+        - name: sensitivity
+          in: query
+          schema:
+            type: string
+          example: '10'
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            text/html:
+              schema:
+                type: string
+              examples:
+                '0':
+              value:
+      servers:
+        - url: 'http://www.timothyparrish.com'
+    servers:
+      - url: 'http://www.timothyparrish.com'
