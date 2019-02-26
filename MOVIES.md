@@ -12,5 +12,6 @@ Below is a list of the favorite movies among the group.  Submit your favorite mo
 * The Iron Giant
 * The Lord of the Rings Trilogy
 * The Shawshank Redemption
+* The Big Lebowski
 * Kingsman
 * Stand and Deliver
