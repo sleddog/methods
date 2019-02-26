@@ -1,31 +1,103 @@
-After navigating to where the program has been downloaded to run the following commands to compile and run the code.
-1. $ gcc -o program -Wall FizzBuzz.c
-2. $ ./program
-3. Then follow the onscreen directions
-The program will print out numbers from 1 to n where n is the number input.
-* if n is divisible by 3 then the number will be replaced with the word Fizz
-* If n is divisible by 5 then the number will be replaced with the word Buzz
-* If n is divisible by 3 and 5 then the number will be replaced with the word FizzBuzz
+### Welcome to FizzBuzz in C with unit testing
 
-### Sample Execution
+This program takes and integer that is greater than 0 as user input. The program then loops through from 1 to the user input and checks if the number is divisible by 3, 5, and 7.
+
+If the number is divisible by 3, print "Fizz" to the screen
+If the number is divisible by 5, print "Buzz" to the screen
+If the number is divisible by 7, print "Bazz" to the screen
+
+### Sample execution
 
 ```
-Enter a number greater than 0: 17
+enter a number greater than 0: 28
 1
 2
-Fizz
+Fizz 
 4
-Buzz
-Fizz
-7
+Buzz 
+Fizz 
+Bazz 
 8
-Fizz
-Buzz
+Fizz 
+Buzz 
 11
-Fizz
+Fizz 
 13
-14
-FizzBuzz
+Bazz 
+Fizz Buzz 
 16
 17
+Fizz 
+19
+Buzz 
+Fizz Bazz 
+22
+23
+Fizz 
+Buzz 
+26
+Fizz 
+Bazz 
+```
+
+### Instructions for initial setup of unit testing
+
+```
+$ ./criterionSetup.sh
+```
+This will run all the necesary commands to install and compile Criterion.
+*Note: It is possible that some dependecies will not be installed. These will need to be installed
+Note 2: This can take some time to completely run
+Note 3: In the event that this file finishes with an error run the following commands.*
+```
+$ git clone --recursive https://github.com/Snaipe/Criterion
+$ cd Criterion
+$ sudo mkdir build
+$ cd build
+$ sudo cmake ..
+$ sudo cmake --build .
+$ sudo make install
+
+```
+*The above commands are the main contents of criterionSetup.sh except they are prefaced with sudo where appropriate.*
+*Now setup the unit test by doing
+
+```
+$ ./setupUnitTest.sh
+```
+
+This will setup AND run the unit test
+
+### Instructions for running the unit test
+
+```
+$ ./runUnitTest.sh
+```
+
+*Note: If you have not done the initial setup for the unit test this will not work.*
+
+
+### Instructions for initial setup of FizzBuzz
+
+```
+$ ./setupFizzBuzz.sh
+```
+
+This will setup and run FizzBuzz
+
+
+### Instruction for running FizzBuzz
+
+```
+$ ./runFizzBuzz.sh
+```
+
+This will run FizzBuzz
+*Note: THe initial setup must be run before FizzBuzz will run*
+
+### Some common errors and their solutions
+
+* I am unable to run file.sh
+```
+$ chmod +x file.sh
 ```
