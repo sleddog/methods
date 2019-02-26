@@ -19,4 +19,4 @@ This project will take an argument via the command line in a web browser using a
 	* CSS
 	* JavaScript
 	* YAML
-* The GET command will be tested through the [Postman API](https://www.getpostman.com/)
+* The GET command will be tested through the [Swagger](https://swagger.io/tools/)
