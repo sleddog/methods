@@ -4,8 +4,7 @@
 
 # Fizzbuzz+
 
-This microservice will have a user enter combinations of numbers and what word they want to replace numbers divisable by that
-number with, followed by what they want the program to count to.
+This microservice will have a user enter hat they want the program to count to, followed by what they want to use to replace the words "fizz", "buzz", and "bazz."
 
 ### Example 1
 
@@ -20,13 +19,10 @@ number with, followed by what they want the program to count to.
 	Returns: {1, 2, "i", 4, "want", "i", "candy"}
 	
 ### Hosting
-
-	Azure
+Azure
 	
 ### Language
-
-	Java
+Java
 	
 ### Testing
-	
-	cURL
+cURL
