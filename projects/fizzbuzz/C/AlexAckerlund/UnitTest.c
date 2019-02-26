@@ -29,7 +29,7 @@ Test(Buzz, test)//last value is Buzz
 
 Test(Bazz, test)//last value is Bazz
 {
-	FBB(5);
+	FBB(7);
 	printf("Testing for a final value of Bazz. Final value is: %s\n", output);
 	cr_expect(strcmp(output, "Bazz") == 0, "'Bazz' is the expected output for an input of 7");
 }

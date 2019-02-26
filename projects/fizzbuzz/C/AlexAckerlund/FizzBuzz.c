@@ -12,17 +12,17 @@ void FBB(int var)
 		found = 0;
 		memset(&output[0], 0, sizeof(output));
 		if(num % 3 == 0)
-			strcat(output, "Fizz ");
+			strcat(output, "Fizz");
 		else
 			found++;
 		
 		if(num % 5 == 0)
-			strcat(output, "Buzz ");
+			strcat(output, "Buzz");
 		else
 			found++;
 
 		if(num % 7 == 0)
-			strcat(output, "Bazz ");
+			strcat(output, "Bazz");
 		else
 			found++;
 		#ifndef UnitTest
