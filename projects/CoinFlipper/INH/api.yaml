@@ -1,0 +1,33 @@
+openapi: 3.0.1
+info:
+  title: INH_Coin_Flipper
+  description: Heads or Tails
+  version: '0.1'
+servers:
+  - url: TBD
+paths:
+  /:
+    get:
+      description: The coin flip
+      parameters:
+        - name: result
+          in: query
+          allowEmptyValue: false
+          schema:
+            type: boolean
+          example: Heads = true, Tails = false
+        - name: userGuess
+          in: query
+          schema:
+            type: Boolean
+          example: Heads = true, Tails = false
+      responses:
+        '200':
+          description: returns comparison 
+          content:
+            text/html:
+              schema:
+                type: string
+              examples:
+                'You guessed correct!':
+                'You guessed wrong!':
