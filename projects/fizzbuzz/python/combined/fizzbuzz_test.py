@@ -1,5 +1,5 @@
 import pytest
-from fizz_buzz import calc_fizzbuzz
+from fizzbuzz import calc_fizzbuzz
 
 def test_fizzbuzzbazz():
     assert calc_fizzbuzz(1) == '1'
