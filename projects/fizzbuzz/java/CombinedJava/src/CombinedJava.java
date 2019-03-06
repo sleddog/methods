@@ -1,4 +1,7 @@
+package CombinedJava;
+
 import java.util.Scanner;
+
 
 public class CombinedJava {
     public static void main(String[] args) {
@@ -29,7 +32,7 @@ public class CombinedJava {
         }
     }
 
-    public static void result(int num) {
+    private static void result(int num) {
 
         for (int i = 1; i <= num; i++) {
             System.out.println(calculate(i));
