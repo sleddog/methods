@@ -6,7 +6,7 @@ This readme explains project 5 for Sam Caekaert. The project will be used to get
 Stock-Info-API
 
 
-##Example
+## Example
 ```
 Call: "GET .../stockPrice?ticker=FB"
 
