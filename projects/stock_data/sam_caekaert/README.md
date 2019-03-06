@@ -20,9 +20,9 @@ Returns:
 ```
 
 ## Built With
-Language: Python
-Hosting: AWS
-Testing: cURL, but I am unsure
+* Language: Python
+* Hosting: AWS
+* Testing: cURL, but I am unsure
 
 
 
