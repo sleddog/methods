@@ -2,13 +2,14 @@ import pytest
 from fizzbuzz import calc_fizzbuzz
 
 def test_fizzbuzzbazz():
-    assert calc_fizzbuzz(1) == '1'
-    assert calc_fizzbuzz(3) == 'Fizz'
-    assert calc_fizzbuzz(5) == 'Buzz'
-    assert calc_fizzbuzz(7) == 'Bazz'
-    assert calc_fizzbuzz(15) == 'FizzBuzz'
-    assert calc_fizzbuzz(21) == 'FizzBazz'
-    assert calc_fizzbuzz(105) == 'FizzBuzzBazz'
+    rules = {3: 'Fizz', 5: 'Buzz', 7: 'Bazz'}
+    assert calc_fizzbuzz(1, rules) == '1'
+    assert calc_fizzbuzz(3, rules) == 'Fizz'
+    assert calc_fizzbuzz(5, rules) == 'Buzz'
+    assert calc_fizzbuzz(7, rules) == 'Bazz'
+    assert calc_fizzbuzz(15, rules) == 'FizzBuzz'
+    assert calc_fizzbuzz(21, rules) == 'FizzBazz'
+    assert calc_fizzbuzz(105, rules) == 'FizzBuzzBazz'
 
 def test_custombuzz():
     rules = {11:'Who', 13:'What', 17:'Where'}
