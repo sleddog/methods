@@ -2,8 +2,8 @@
 
 ENV_PATH="testenv"
 
-pip -V
-pip3 -V
+/usr/local/bin/pip -V
+/usr/local/bin/pip3 -V
 
 # create virtual environment
 # python3 -m venv $ENV_PATH
