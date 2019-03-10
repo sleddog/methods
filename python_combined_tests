@@ -2,11 +2,11 @@
 
 ENV_PATH="testenv"
 
-python -V
-python3 -V
+pip -V
+pip3 -V
 
 # create virtual environment
-# python -m venv $ENV_PATH
+# python3 -m venv $ENV_PATH
 # source $ENV_PATH/bin/activate
 
 # install relevant tools in virtual environment
