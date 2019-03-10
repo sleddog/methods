@@ -2,9 +2,12 @@
 
 ENV_PATH="testenv"
 
+python -V
+python3 -V
+
 # create virtual environment
-python -m venv $ENV_PATH
-source testenv/bin/activate
+# python -m venv $ENV_PATH
+# source $ENV_PATH/bin/activate
 
 # install relevant tools in virtual environment
 pip install -U pytest pytest-cov
