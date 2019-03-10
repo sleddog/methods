@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing Python combined solution'
-                sh "python_combined_tests"
+                sh './python_combined_tests'
             }
         }
         stage('Deploy') {
