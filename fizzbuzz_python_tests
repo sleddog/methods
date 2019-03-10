@@ -1,3 +1,0 @@
-#!/bin/bash
-
-pytest --cov=projects/fizzbuzz/python/combined/ --cov-report=term-missing projects/fizzbuzz/python/combined/fizzbuzz_test.py

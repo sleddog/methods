@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing Python combined solution'
-                sh "fizzbuzz_python_tests"
+                sh "pytest --cov=projects/fizzbuzz/python/combined/ --cov-report=term-missing projects/fizzbuzz/python/combined/fizzbuzz_test.py"
             }
         }
         stage('Deploy') {
