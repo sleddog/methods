@@ -1,1 +1,5 @@
 .idea
+
+# python files
+__pycache__/
+.coverage

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+ENV_PATH="testenv"
+
+# create virtual environment
+python3 -m venv $ENV_PATH
+source testenv/bin/activate
+
+# install relevant tools in virtual environment
+pip3 install -U pytest pytest-cov
+
+# run tests
+pytest --cov=projects/fizzbuzz/python/combined/ --cov-report=term-missing projects/fizzbuzz/python/combined/fizzbuzz_test.py
+
+# remove latent files
+rm -rf $ENV_PATH
+rm .coverage
