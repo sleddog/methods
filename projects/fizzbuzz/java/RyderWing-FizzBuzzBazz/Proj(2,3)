@@ -1,0 +1,61 @@
+package project02;
+
+/**
+ *
+ * @author Starloft
+ */
+import java.util.Scanner;
+public class Project02 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //declare variable n
+        int n;
+        int counter = 1;
+        // create instancce of scanner
+        Scanner scan = new Scanner(System.in);
+        
+        //take input from user and set it to variable n
+        System.out.println("What number would you like to count to?");
+        
+        n = scan.nextInt();
+        
+        //use a counter and while loop with a nested if statement to complete requirements
+        
+        while(counter != n+1)
+        {
+           // tests if a multiple of both 3 and 5 for "FizzBuzz"
+           if(counter % 15 == 0)
+           {
+               System.out.println("FizzBuzz");
+           }
+           //If a multiple of 3 prints Fizz
+           else if(counter % 3 == 0)
+           {
+               System.out.println("Fizz");
+           }
+           // if a multiple of five prints buzz
+           else if(counter % 5 == 0)
+           {
+               System.out.println("Buzz");
+           }
+           //if a multiple of 7 prints Bazz
+           else if(counter % 7 == 0)
+           {
+               System.out.println("Bazz");
+           }
+           // if none of the above occur prints number
+            else
+           {
+               System.out.println("" + counter);
+           }
+           //increase counter and return to beginning of while
+           counter++;
+           
+            
+        }
+    }
+    
+}
