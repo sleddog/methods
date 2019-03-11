@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo 'compiling FizzBuzzBazz...'
-gcc -o runMe FizzBuzzBazz.c
+gcc -o runMe FBB.c
 
 echo 'launching FizzBuzzBazz...'
 ./runMe
