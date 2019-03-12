@@ -16,10 +16,11 @@ pipeline {
             steps {
                 echo 'Testing Python combined solution'
                 sh 'which python3'
-                sh 'curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"'
-                sh 'python3 get-pip.py --user'
-                sh 'pip3 --help'
-                sh 'pip3 --version'
+                sh 'python3 --version'
+                //sh 'curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"'
+                //sh 'python3 get-pip.py --user'
+                //sh 'pip3 --help'
+                //sh 'pip3 --version'
                 //sh './python_combined_tests'
             }
         }
