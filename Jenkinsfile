@@ -15,8 +15,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing Python combined solution'
-                sh 'which python'
-                sh './python_combined_tests'
+                sh 'which python3'
+                sh 'pip3 --version'
+                //sh './python_combined_tests'
             }
         }
         stage('Deploy') {
