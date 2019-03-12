@@ -1,16 +1,27 @@
 pipeline {
-    agent none
+    agent any
 
     stages {
-        stage('Test') {
-            agent {
-                docker {
-                    image 'python:2-alpine'
-                }
+        stage('Example') {
+            steps {
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
+        }
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
             steps {
                 echo 'Testing Python combined solution'
+                sh 'which python'
                 sh './python_combined_tests'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
