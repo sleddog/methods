@@ -1,0 +1,52 @@
+openapi: 3.0.0
+info:
+  version: '1.0'
+  title: 'FizzBuzz'
+  description: 'Prints FizzBuzz based on input.'
+# Added by API Auto Mocking Plugin
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/JonathanSorem/FizzBuzz/1.0
+
+# Basic authentication
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+security:
+  - BasicAuth: []
+
+paths:
+  /map:
+    get: 
+      description: Prints FizzBuzz
+      parameters:
+        - name: latitude
+          in: query
+          description: Input
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successfully printed FizzBuzz
+          content:
+            application/json:
+              schema:
+                type: List
+                items:
+                  type: integer
+                  required:
+                    - input
+                  properties:
+                    fizzbuzz:
+                      type: integer
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:   
+                  message:
+                    type: string
