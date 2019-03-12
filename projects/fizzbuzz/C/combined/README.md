@@ -80,4 +80,20 @@ $ ./runTests.sh
 Notes:
 The script to run the unit tests of FizzBuzzBazz will clean the install by removing the compiled files after completing tests. The macro guard for print output will prevent FizzBuzzBazz from printing each iteration for the unit tests.
 
+### How to add/remove key-value pairs in the program
+there is a line that reads
+```
+struct KV keys[x];
+```
+change the value of x to the number of key-value pairs to the number of pairs you want the program to have
+
+There is also a section that has code that looks like
+```
+keys[x].key = y;
+strncpy(keys[x].value, "Word", 4);
+```
+follow this structure when adding more key-value pairs
+
+Note: the number of key-value pairs that are declared must be equal to the x value in the struct KV keys[x] line.
+
 ### Thank you for using FizzBuzzBazz
