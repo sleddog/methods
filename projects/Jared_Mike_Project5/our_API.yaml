@@ -13,7 +13,7 @@ paths:
           required: true
           schema:
             type: integer
-          description: the number: we pass to fizzbuzz
+          description: "the number we pass to fizzbuzz"
       responses:
         '200':
           description: JSON output
