@@ -1,0 +1,24 @@
+openapi: 3.0.0
+info:
+  title: FizzyCounting
+  description: The classic FizzBuzz toy function, but with a healthy portion of customization
+  version: 0.0.0
+servers:
+  # can have multiple, we will probably only need one
+  # we will add actual urls and descrptions when we het to part 2 of this project
+  - url: http://api.example.com/v1
+    description: Optional server description, e.g. Main (production) server
+  - url: http://staging-api.example.com
+    description: Optional server description, e.g. Internal staging server for testing
+paths:
+  /fizzycount{maximum}:
+    post:
+      summary: Returns the FizzyCounting execution for the number indicated in the URL
+      # description: Optional extended description in CommonMark or HTML.
+      responses:
+        '200':    # status code (normal error free execution)
+          description: A text string for the given output
+          content:
+            application/json:
+              schema:
+                type: string
