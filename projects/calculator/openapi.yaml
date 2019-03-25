@@ -1,0 +1,30 @@
+openapi: 3.0.1
+info:
+  title: pyCalc
+  description: Simple service that will return the results of simple math calculations using python
+  version: 1.0.0
+servers:
+- url: /
+paths:
+  /:
+    get:
+      summary: Calculate simple math operations
+      parameters:
+      - name: firstVar
+        in: query
+        description: First Variable
+        required: true
+        schema: {}
+      - name: secondVar
+        in: query
+        description: Second Variable
+        schema: {}
+      - name: operation
+        in: query
+        description: Math operation between variables
+        schema: {}
+      responses:
+        200:
+          description: Return correctly calculated value
+          content: {}
+components: {}
