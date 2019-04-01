@@ -20,3 +20,19 @@ This project will take an argument via the command line in a web browser using a
 	* JavaScript
 	* YAML
 * The GET command will be tested through the [Swagger](https://swagger.io/tools/)
+
+
+* Below are the instructions for running this webservice
+To run the web service do:
+```
+$ python app.py
+```
+
+A random number between 0 and 100 inclusive is generated.
+Your job is to try and guess this number.
+To do this go to:
+localhost:5000
+
+To enter a guess go to
+localhost:5000/<guess_number>
+Note: <guess_number> is the integer value you wish to guess
