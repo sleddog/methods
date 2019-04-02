@@ -1,0 +1,35 @@
+openapi: 3.0.0
+info:
+  title: 'Current Stock Price'
+  version: '1.0.0'
+  description: 'An API that returns the current price of an entered stock ticker'
+  contact:
+    name: sam
+    email: samdcaek@gmail.com
+paths:
+  /stockPrice:
+    get:
+      summary: Returns the most recent stock price
+      parameters:
+        - name: ticker
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Stock ticker for requested company
+      responses:
+        200:
+          description: Sucessful return of stock price
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties: 
+                    ticker:
+                      type: string
+                      example: GOOGL
+                      
+                    price:
+                      type: number
+                      example: 1001.11
