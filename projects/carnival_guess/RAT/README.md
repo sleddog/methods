@@ -33,6 +33,10 @@ Your job is to try and guess this number.
 To do this go to:
 localhost:5000
 
-To enter a guess go to
+To enter a guess go to:
 localhost:5000/<guess_number>
-Note: <guess_number> is the integer value you wish to guess
+Note: <guess_number> is the integer value you wish to guess.
+
+If you want a new number to guess go to:
+localhost:5000/newNumber
+You will get a message saying that that a new number has been generated.
