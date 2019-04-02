@@ -1,2 +1,6 @@
 .idea
 .DS_Store
+
+# python files
+__pycache__/
+.coverage
