@@ -1,0 +1,47 @@
+# modify for fizzbuzz++
+
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: FizzBuzz++
+  license:
+    name: MIT
+servers:
+  # TODO
+  - url: http://petstore.swagger.io/v1
+paths:
+  /game:
+    get:
+      summary: List of String integers or Fizz/Buzz/Bazz
+      operationId: listFizz
+      tags:
+        - fizz
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: List of String integers or Fizz/Buzz/Bazz
+          content:
+            application/json:    
+              schema:
+                $ref: "#/Game"
+        # TODO
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+Game:
+  required:
+    - n
+  properties:
+    n:
+      type: integer
+      format: int64
