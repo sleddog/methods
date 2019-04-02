@@ -1,0 +1,44 @@
+openapi: 3.0.0
+info:
+	title: FizzBuzzBazzProject
+	description: Runs fizzbazzbuzz code with input from user
+	version: 0.0.1
+servers:
+	- url: 'https://fizzbuzzbazz.appspot.com'
+paths:
+	/FizzBuzzBazz:
+		get:
+			description: return result of fizzbuzzbazz
+			parameters:
+				- name: i
+				  in: query
+				  required: true
+				  schema:
+					type: integer
+				  description: value that the program will run to
+				- name: fizz
+				  in: query
+				  required: true
+				  schema:
+					type: string
+				  description: the word that will replace numbers divisible by 3 
+				- name: buzz
+				  in: query
+				  required: true
+				  schema:
+					type: string
+				  description: the word that will replace numbers divisible by 5 
+				- name: bazz
+				  in: query
+				  required: true
+				  schema:
+					type: string
+				  description: the word that will replace numbers divisible by 7
+			responses:
+			  '200':
+				description: JSON array outputed from fizzbuzzbazz program
+				content:
+				  text/html:
+				    type: array
+				    items: 
+				      type: string 
