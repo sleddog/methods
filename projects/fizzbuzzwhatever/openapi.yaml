@@ -1,0 +1,40 @@
+openapi: 3.0.0
+info:
+    title: Fizz Buzz Whatever
+    description: Custom fizz buzz whatever calcualtor.
+    version: 0.0.1
+servers:
+    - url: none
+      description: Server comming soon!
+paths:
+    /fizz/{map}:
+      post:
+        summary: Creates logic for fizz buzz.
+        parameters:
+        - in: path
+          name: map
+          schema:
+              type: array
+              items:
+                type: string
+          required: true
+          description: a array of strings with the pharse you want printed when devisible by number that comes after the phrase seperated by a space. The first string should be the name of the scheme you are creating.
+        responses:
+          '200':    # status code
+            description: added info
+      get:
+        summary: Returns a string of custom fizz buzz.
+        parameters:
+        - in: path
+          name: map
+          schema:
+            type: string
+          required: true
+          description: a string with the name of the scheme you want to invoke followed by a space with the number you want to use.
+        responses:
+          '200':    # status code
+            description: a string of custom fizz buzz
+            content:
+              application/java:
+                schema: 
+                  type: string
