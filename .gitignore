@@ -43,3 +43,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+=======
+# python files
+__pycache__/
+.coverage
+

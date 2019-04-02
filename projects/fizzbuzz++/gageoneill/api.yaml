@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Fizzbuzz+ Project5
+  description: fizzbuzz
+  version: 1.0.0
+paths:
+  /fizzbuzz:
+    get:
+      summary: prints results of fizzbuzz
+      parameters:
+        - name: num
+          in: query
+          required: true
+          schema:
+            type: integer
+          description: fizzbuzz number
+      responses:
+        '200':
+          description: JSON output
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string

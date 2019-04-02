@@ -1,0 +1,43 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: CornettCalc
+  version: 1.0.0
+  license:
+    name: Brady R. Cornett
+servers:
+  - url: http://cornettcalc.com
+paths:
+  /:
+    get:
+      summary: Perform basic arithmetic with two numbers
+      parameters:
+        - name: var1
+          in: query
+          description: Variable one
+          required: true
+          schema:
+            type: integer
+            format: int32
+        - name: var2
+          in: query
+          description: Variable two
+          required: true
+          schema:
+            type: integer
+            format: int32
+        - name: op
+          in: query
+          description: Operator between ints
+          required: true
+          schema:
+            type: character
+      responses:
+        '200':
+              description: Returns value from computation
+              content:
+                text/html: 
+                  schema:
+                  type: integer
+                  examples:
+                          '7':
