@@ -1,8 +1,12 @@
 from flask import Flask
 import json
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route('/fizzbuzz/cap=<int:cap>&fizz=<fizz>&buzz=<buzz>&bazz=<bazz>')
+@application.route('/')
+def hello():
+    return "Hello there!"
+
+@application.route('/fizzbuzz/cap=<int:cap>&fizz=<fizz>&buzz=<buzz>&bazz=<bazz>')
 def fizzbuzzbazz(cap, fizz, buzz, bazz):
     result = []
     for x in range(1, cap+1):
@@ -19,7 +23,7 @@ def fizzbuzzbazz(cap, fizz, buzz, bazz):
 
     return json.dumps(result)
 	
-@app.route('/fizzbuzz')
+@application.route('/fizzbuzz')
 def fizzbuzz():
     result = []
     for x in range(1, 21):
@@ -32,6 +36,7 @@ def fizzbuzz():
             entry = x
         result.append(entry)
 
+
     return json.dumps(result)
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80)
+    application.run(host="0.0.0.0", port=80)
