@@ -4,34 +4,46 @@ info:
   description: Runs the fizzbuzz code based on user's input
   version: 1.0.0
 paths:
-  /fizzbuzz:
+  /fizzbuzz/cap={cap}&fizz={fizz}&buzz={buzz}&bazz={bazz}:
     get:
       summary: Returns results of fizzbuzz ran with input
       parameters:
         - name: cap
-          in: query
+          in: path
           required: true
           schema:
             type: integer
           description: The number the fizzbuzz program will count to
         - name: fizz
-          in: query
+          in: path
           required: true
           schema:
             type: string
           description: The word that will replace fizz in the program
         - name: buzz
-          in: query
+          in: path
           required: true
           schema:
             type: string
           description: The word that will replace buzz in the program
         - name: bazz
-          in: query
+          in: path
           required: true
           schema:
             type: string
           description: The word that will replace bazz in the program
+      responses:
+        '200':
+          description: a JSON array of fizzbuzz output
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+  /fizzbuzz:
+    get:
+      summary: Returns the results of a default fizzbuzz application
       responses:
         '200':
           description: a JSON array of fizzbuzz output
