@@ -4,7 +4,7 @@ info:
 	description: Runs fizzbazzbuzz code with input from user
 	version: 0.0.1
 servers:
-	- url: 'https://fizzbuzzbazz.appspot.com'
+	- url: 'https://fizzybuzzybazz.appspot.com'
 paths:
 	/FizzBuzzBazz:
 		get:

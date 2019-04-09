@@ -8,7 +8,7 @@ To use it, type /fbb?num=[ENTER NUMBER] after .com
 This web application was created with the tutorial from "https://cloud.google.com/appengine/".
 
 Example 1:
-	https://fizzbuzzbazz.appspot.com/fbb?num=8
+	https://fizzybuzzybazz.appspot.com/fbb?num=8
 	
 	Answer:
 	[FizzBuzzBazz, 1, 2, Fizz, 4, Buzz, Fizz, Bazz, 8]
