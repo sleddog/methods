@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest",
-    "start": "start http://localhost:3000 & nodemon index.js"
+    "start": "start http://localhost:3000 & nodemon index.js",
+    "build": "node index.js"
   },
   "author": "team-edward",
   "license": "UNLICENSED",

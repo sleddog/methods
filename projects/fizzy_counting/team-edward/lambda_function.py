@@ -4,17 +4,15 @@ print('Loading function')
 
 
 def lambda_handler(event, context):
-    OUTPUT_TARGET = "body"
-
     if 'queryStringParameters' not in event:
-        return {OUTPUT_TARGET: "No parameters provided. Please provide a maximum number and at least one rule"}
+        return response("400", "No parameters provided. Please provide a maximum number and at least one rule")
 
     params = event['queryStringParameters']
 
     if 'max' in params.keys():
         max = params.pop('max')
     else:
-        return {OUTPUT_TARGET: "No maximum value provided"}
+        return response("400", "No maximum value provided")
 
     output = ""
 
@@ -27,4 +25,8 @@ def lambda_handler(event, context):
             temp += str(i)
         output += temp + "\n"
 
-    return {OUTPUT_TARGET: output}
+    return response("200", output)
+
+def response(status_code, body):
+    resp = {"statusCode": status_code,
+            "body": body}
