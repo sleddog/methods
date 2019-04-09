@@ -14,35 +14,88 @@
 </head>
 
 <body>
-  <form action="https://gnis2begf9.execute-api.us-west-2.amazonaws.com/default/fizzy_counting?max=100" method="GET">
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">#</span>
-      </div>
-      <input type="text" class="form-control" placeholder="Maximum" name="max" required>
-    </div>
+  <div class="card mx-auto">
+    <div class="card-body">
+      <h5 class="card-title">FizzyCounting</h5>
+      <p class="card-text">Please complete the following form to create a custom FizzyCounting output!</p>
+      <p class="card-text">Maximum is the largest value to which the program will count, and each of the numbered rules
+        will append the submitted string to the current number when it is evenly divided by the rule number. </p>
+      <p>The results are simpler than this description makes them seem! Give it a try!</p>
 
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">3</span>
-      </div>
-      <input type="text" class="form-control" placeholder="Fizz" name="3" required>
-    </div>
+      <form action="https://gnis2begf9.execute-api.us-west-2.amazonaws.com/default/fizzy_counting" method="GET">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">#</span>
+          </div>
+          <input type="number" class="form-control" placeholder="Maximum" name="max" required autofocus>
+        </div>
 
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">5</span>
-      </div>
-      <input type="text" class="form-control" placeholder="Buzz" name="5" required>
-    </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">1</span>
+          </div>
+          <input type="text" class="form-control" name="1">
+        </div>
 
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">7</span>
-      </div>
-      <input type="text" class="form-control" placeholder="Bazz" name="7" required>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">2</span>
+          </div>
+          <input type="text" class="form-control" name="2">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">3</span>
+          </div>
+          <input type="text" class="form-control" name="3">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">4</span>
+          </div>
+          <input type="text" class="form-control" name="4">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">5</span>
+          </div>
+          <input type="text" class="form-control" name="5">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">6</span>
+          </div>
+          <input type="text" class="form-control" name="6">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">7</span>
+          </div>
+          <input type="text" class="form-control" name="7">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">8</span>
+          </div>
+          <input type="text" class="form-control" name="8">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">9</span>
+          </div>
+          <input type="text" class="form-control" name="9">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
     </div>
-    <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+  </div>
   </form>
 
   <!-- Optional JavaScript -->
