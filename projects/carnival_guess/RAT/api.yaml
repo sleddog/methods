@@ -2,40 +2,23 @@ openapi: 3.0.1
 info:
   title: defaultTitle
   description: defaultDescription
-  version: '0.1'
+  version: "0.1"
 servers:
-  - url: 'http://www.timothyparrish.com'
+- url: http://206.189.64.4
 paths:
-  /:
+  /IndustryMethods/30:
     get:
       description: Auto generated using Swagger Inspector
-      parameters:
-        - name: ''
-          in: query
-          allowEmptyValue: true
-          schema:
-            type: string
-        - name: myvar
-          in: query
-          schema:
-            type: string
-          example: '27'
-        - name: sensitivity
-          in: query
-          schema:
-            type: string
-          example: '10'
       responses:
-        '200':
+        200:
           description: Auto generated using Swagger Inspector
           content:
-            text/html:
+            text/html; charset=utf-8:
               schema:
                 type: string
-              examples:
-                '0':
-                  value: "<!DOCTYPE HTML>\r\n\r\n<html>\r\n\t<head>\r\n\t\t<meta charset=\"UTF-8\">\r\n\t\t<title>TimothyParrish.com</title>\r\n\t\t<link href=\"css/global.css\" rel=\"stylesheet\" type=\"text/css\">\r\n\t\t<link href=\"css/index.css\" rel=\"stylesheet\" type=\"text/css\">\r\n\t\t<link href=\"https://fonts.googleapis.com/css?family=Francois+One\" rel=\"stylesheet\">\r\n\t</head>\r\n\t\r\n\t<body>\r\n\t\t<div id=\"header\">\r\n\t\t\t<h1>Welcome to TimothyParrish.com</h1>\r\n\t\t</div><!--end of header-->\r\n\t\r\n\t\t<ul id=\"nav\">\r\n\t\t\t<li><a class=\"current\" href=\"index.html\" id=\"firstLink\">Home</a></li>\r\n\t\t\t<li><a href=\"html/photos.html\">Photos</a></li>\r\n\t\t\t<li><a href=\"html/montana.html\">Montana Adventures</a></li>\r\n\t\t\t<li><a href=\"html/cooking.html\">Cooking</a></li>\r\n\t\t\t<li><a href=\"https://www.advocare.com/150556834/store\" \r\n\t\t\t\t\tid=\"lastLink\">Advocare</a></li>\t\t\t\r\n\t\t\t<div class=\"clear\"></div>\r\n\t\t</ul><!--end of navigation-->\r\n\t\t\r\n\t\t<div id=\"heroImage\">\r\n\t\t\t<img src=\"images/montanaHighway.jpg\" alt=\"Montana Highway\">\t\t\r\n\t\t</div><!--end of heroImage-->\r\n\r\n  \t\t<div id=\"photoLabel\">\r\n  \t\t\t<p>Photo taken near Sedan, MT</p>\r\n  \t\t</div><!--end of photoLabel-->\r\n\r\n  \t\t<div id=\"footer\">\r\n  \t\t \t<a href=\"mailto:admin@timothyparrish.com\">Contact Webmaster</a>\r\n  \t\t</div><!--end of footer-->\r\n  \t\t\r\n\t</body>\r\n</html>"
+              examples: {}
       servers:
-        - url: 'http://www.timothyparrish.com'
+      - url: http://206.189.64.4
     servers:
-      - url: 'http://www.timothyparrish.com'
+    - url: http://206.189.64.4
+components: {}
