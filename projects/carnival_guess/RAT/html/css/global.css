@@ -1,0 +1,11 @@
+body{
+	background-image: url("../images/wallpaperLight.png");
+	/* Background pattern from subtlepatterns.com */
+	width: 1000px;
+	margin: 0px auto; 
+	}
+
+#container {
+	display: inline-block;
+	margin: 0px auto;
+}
