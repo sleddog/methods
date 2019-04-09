@@ -16,7 +16,7 @@ paths:
 				  schema:
 					type: integer
 				  description: value that the program will run to
-				
+		
 			responses:
 			  '200':
 				description: Array with values based on program output

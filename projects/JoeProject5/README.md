@@ -1,3 +1,4 @@
+
 Joe Icopini Project 6
 
 This microservice will take in a value and give back a list of numbers up to that value.
@@ -12,6 +13,7 @@ Example 1:
 	
 	Answer:
 	[FizzBuzzBazz, 1, 2, Fizz, 4, Buzz, Fizz, Bazz, 8]
+
 
 Hosting:
 	Google
