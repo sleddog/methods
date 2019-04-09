@@ -2,42 +2,51 @@ openapi: "3.0.0"
 info:
   version: 1.0.0
   title: CornettCalc
-  version: 1.0.0
   license:
     name: Brady R. Cornett
 servers:
-  - url: http://cornettcalc.com
+  - url: http://calculatorbrady-env-1.m2bhvtue83.us-west-2.elasticbeanstalk.com
 paths:
   /:
     get:
-      summary: Perform basic arithmetic with two numbers
+      summary: Welcome page for web service
+      responses:
+       '200':
+          description: Returns Welcome message
+          content:
+            application/json:
+              schema: 
+                type: string
+  /calculator:
+    get:
+      summary: Calculator for web service
       parameters:
-        - name: var1
+        - name: op
+          in: query
+          description: Operator variable
+          required: true
+          schema:
+            type: string
+        - name: fn
           in: query
           description: Variable one
           required: true
           schema:
             type: integer
             format: int32
-        - name: var2
+        - name: ln
           in: query
           description: Variable two
           required: true
           schema:
             type: integer
             format: int32
-        - name: op
-          in: query
-          description: Operator between ints
-          required: true
-          schema:
-            type: character
       responses:
         '200':
-              description: Returns value from computation
-              content:
-                text/html: 
-                  schema:
-                  type: integer
-                  examples:
-                          '7':
+          description: Returns array of strings containing variables and 
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
