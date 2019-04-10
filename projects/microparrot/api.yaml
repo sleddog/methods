@@ -1,0 +1,26 @@
+info:
+  titel: Project6
+  description: expose get endpoint namely a talking parrot that returns the value passed in as a jsonified string
+  version: "0.11"
+servers:
+- url: http://project6a.us-east-2.elasticbeanstalk.com/
+paths: 
+  /parrot:
+    get:
+      summary: will return a dictionary in json format of Responce value, Reply, value
+      parameters:
+        - name: say
+          in: query
+          description: Operator variable
+          required: false
+          schema:
+            type: string
+    responses:
+      '200':
+        description: Returns array of Responce value, Reply value
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: string
