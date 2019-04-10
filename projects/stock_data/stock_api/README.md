@@ -6,13 +6,13 @@
 
 To access the BSM microservice, go to:
 ```
-`http://caekfin.dhgvtpspfu.us-west-2.elasticbeanstalk.com`.
+`http://caekfin-env.svx9iujwq3.us-west-2.elasticbeanstalk.com`
 ```
 
 
 An example BSM calculation can be seen by navigating to:
 ```    
-`http://caekfin.dhgvtpspfu.us-west-2.elasticbeanstalk.com/bsm/otype=c&S=100&K=100&tm=1&r=0&d=0&sig=0.2`.
+`http://caekfin-env.svx9iujwq3.us-west-2.elasticbeanstalk.com/bsm/otype=c&S=100&K=100&tm=1&r=0.05&d=0&sig=0.2`
 ```
 
 # How this was built:
