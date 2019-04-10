@@ -4,10 +4,9 @@
 
 # Black Scholes (BSM) Option Price
 
-To access the BSM microservice, go to:
-```
-`http://caekfin-env.svx9iujwq3.us-west-2.elasticbeanstalk.com`
-```
+This microservice can be used to calculate the Black Scholes value of a european stock option. 
+
+To access the BSM microservice, go to: http://caekfin-env.svx9iujwq3.us-west-2.elasticbeanstalk.com
 
 
 An example BSM calculation can be seen by navigating to:
