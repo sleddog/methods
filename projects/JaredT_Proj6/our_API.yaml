@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Project5_FizzBuzz++
+  description: creating a microservice to test fizzbuzz
+  version: 1.0.0
+servers:
+  - url: https://fizzbuzzbazz.sfo2.digitaloceanspaces.com/
+paths:
+  /fizzbuzz:
+    get:
+      summary: print the fizzbuzz output
+      parameters:
+        - name: num
+          in: query
+          required: true
+          schema:
+            type: integer
+          description: "the number we pass to fizzbuzz"
+      responses:
+        '200':
+          description: JSON output
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
