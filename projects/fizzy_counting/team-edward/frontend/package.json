@@ -1,0 +1,18 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "a simple frontend for a simple fizzbuzz microservice",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "start http://localhost:3000 & nodemon index.js",
+    "build": "node index.js"
+  },
+  "author": "team-edward",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}

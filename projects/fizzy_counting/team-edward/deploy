@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo Creating binary blob
+zip -X -r ./index.zip lambda_function.py
+
+echo Uploading to AWS Lambda
+aws lambda update-function-code --function-name fizzy_counting --zip-file fileb://index.zip
+
+echo Removing artifacts
+rm index.zip
+
+echo Code deployed

@@ -1,24 +1,27 @@
 openapi: 3.0.0
 info:
-  title: FizzyCounting
-  description: The classic FizzBuzz toy function, but with a healthy portion of customization
+  title: fizzy_counting
+  description: The classic FizzBuzz toy function, but as an example of a simple microservice
   version: 0.0.0
 servers:
-  # can have multiple, we will probably only need one
-  # we will add actual urls and descrptions when we het to part 2 of this project
-  - url: http://api.example.com/v1
-    description: Optional server description, e.g. Main (production) server
-  - url: http://staging-api.example.com
-    description: Optional server description, e.g. Internal staging server for testing
+  - url: https://gnis2begf9.execute-api.us-west-2.amazonaws.com/default/fizzy_counting
+    description: production endpoint
 paths:
-  /fizzycount{maximum}:
-    post:
-      summary: Returns the FizzyCounting execution for the number indicated in the URL
-      # description: Optional extended description in CommonMark or HTML.
+  /fizzy_counting:
+    get:
+      parameters:
+        - in: query
+          name: max
+          schema:
+            type: integer
+          description: The maximum number you would like the program to count to
+        - in: query
+          name: rule
+          schema:
+            type: integer
+          description: The parameter name must be an integer, and the value is the string that will be appended if the current value is divisible by the parameter name. Any number of these rules may be submitted
       responses:
-        '200':    # status code (normal error free execution)
-          description: A text string for the given output
-          content:
-            application/json:
-              schema:
-                type: string
+        200:
+          description: "the fizzy_counting output for a valid set of parameters"
+          content: {}
+components: {}

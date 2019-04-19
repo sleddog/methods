@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo INSTALLING NODE FILES
+npm install
+
+echo RESOLVING WARNINGS
+npm audit fix
+
+echo DEPLOYING TO FIREBASE
+firebase deploy
