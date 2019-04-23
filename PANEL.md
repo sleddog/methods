@@ -7,3 +7,4 @@ Please include a list of questions / topics you want to discuss with our panel b
 * Looking back, what do you wish you would have done or learned as an undergraduate?
 * What questions do successful candidates ask you about your company in interviews?
 * What are some common pitfalls we should try to avoid as we enter the industry?
+* What are some habits we could start developing now to better prepare us for entering the industry?
