@@ -14,3 +14,5 @@ Please include a list of questions / topics you want to discuss with our panel b
 * What are the qualities of successful managers you have worked under?
 * What other skills are frequently used in your work or on your team that are not specifcally coding related?
 * What single activity do you spend the most time on during a given day?
+* Does management often disrupt work (Is Dilbert a documentary?)
+* Would you ever hire someone without a LinkedIn?
