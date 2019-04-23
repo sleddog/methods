@@ -10,3 +10,4 @@ Please include a list of questions / topics you want to discuss with our panel b
 * What are some habits we could start developing now to better prepare us for entering the industry?
 * Do you think that P = NP? Why or why not?
 * What are some lesser-known tools (IDEs, planning tools, services, etc.) that you use frequently?
+* What single activity do you spend the most time on during a given day?
