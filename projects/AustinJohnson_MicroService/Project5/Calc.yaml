@@ -1,0 +1,44 @@
+openapi: "3.0.1"
+info:
+  title: "LambdaCalc"
+  version: "2019-04-29T03:42:17Z"
+paths:
+  /calc:
+    get:
+      parameters:
+      - name: "operand2"
+        in: "query"
+        required: true
+        schema:
+          type: "string"
+      - name: "operator"
+        in: "query"
+        required: true
+        schema:
+          type: "string"
+      - name: "operand1"
+        in: "query"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "200 response"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Empty"
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Input"
+        required: true
+      responses:
+        200:
+          description: "200 response"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Empty"
