@@ -26,4 +26,3 @@ paths:
                   type: string
               items:
                 type: string
-		

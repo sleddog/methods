@@ -1,0 +1,49 @@
+//Marielle Korringa
+//Homework 6
+
+
+import java.applet.*;
+import java.awt.*;
+
+public class Homework4 extends Applet{
+	TextField number;
+	public void getInput(Graphics g){
+		number = new TextField(10);
+		add(number);
+		number.setText("0");
+		g.drawString("hello world", 100, 200);
+		
+	}
+	
+	public void FizzBuzz(Graphics g){
+		int a = 0;
+        g.drawString("Enter the number in the box",10,50);
+        try
+        {
+                String n = number.getText();
+                a=  Integer.parseInt(n);
+        }
+        catch(Exception e)
+        { System.out.println("Error please enter an integer.");
+        };
+		int i = a;
+		int j = 1;
+		do{
+			if(j%3 == 0){ //check if # is divisible by 3
+				g.drawString("Fizz",10,50);	
+			}
+			if(j%5 == 0){ //check if # is divisible by 5
+				g.drawString("Buzz",10,50);
+			}
+			if(j%7 == 0){ //check if # is divisible by 7
+				g.drawString("Bazz",10,50);
+			}
+			if (j%3 != 0 && j%5 != 0 && j%7 != 0){ //print all other #
+				g.drawString("%i"+j,10,50);
+			}
+			++j;
+			--i;
+			g.drawString("",10,50);
+		}while(i > 0);
+	}
+}
