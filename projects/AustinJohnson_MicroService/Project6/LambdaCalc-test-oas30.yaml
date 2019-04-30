@@ -1,0 +1,103 @@
+openapi: "3.0.1"
+info:
+  title: "LambdaCalc"
+  version: "2019-04-29T03:42:17Z"
+servers:
+- url: "https://t8nhzdycmd.execute-api.us-west-1.amazonaws.com/{basePath}"
+  variables:
+    basePath:
+      default: "/test"
+paths:
+  /calc:
+    get:
+      parameters:
+      - name: "operand2"
+        in: "query"
+        required: true
+        schema:
+          type: "string"
+      - name: "operator"
+        in: "query"
+        required: true
+        schema:
+          type: "string"
+      - name: "operand1"
+        in: "query"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "200 response"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Empty"
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Input"
+        required: true
+      responses:
+        200:
+          description: "200 response"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Empty"
+  /calc/{operand1}/{operand2}/{operator}:
+    get:
+      parameters:
+      - name: "operand2"
+        in: "path"
+        required: true
+        schema:
+          type: "string"
+      - name: "operator"
+        in: "path"
+        required: true
+        schema:
+          type: "string"
+      - name: "operand1"
+        in: "path"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        200:
+          description: "200 response"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Result"
+components:
+  schemas:
+    Empty:
+      title: "Empty Schema"
+      type: "object"
+    Input:
+      title: "Input"
+      type: "object"
+      properties:
+        a:
+          type: "number"
+        b:
+          type: "number"
+        op:
+          type: "string"
+    Output:
+      title: "Output"
+      type: "object"
+      properties:
+        c:
+          type: "number"
+    Result:
+      title: "Output"
+      type: "object"
+      properties:
+        input:
+          $ref: "#/components/schemas/Input"
+        output:
+          $ref: "#/components/schemas/Output"
