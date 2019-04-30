@@ -1,0 +1,96 @@
+openapi: 3.0.0
+info:
+  title: 'BSM Option Price'
+  version: '1.0.0'
+  description: 'An API that returns the price of an option given the stock variables'
+  contact:
+    name: sam
+    email: samdcaek@gmail.com
+paths:
+  /stockPrice:
+    get:
+      summary: Returns the BSM option price
+      parameters:
+        - name: otype
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Option type call or put
+          
+        - name: S
+          in: query
+          required: true
+          schema:
+            type: number
+          description: Current Stock price
+        - name: K
+          in: query
+          required: true
+          schema:
+            type: number
+          description: Option Strike Price
+        - name: tm
+          in: query
+          required: true
+          schema:
+            type: number
+          description: Time until maturity
+        - name: r
+          in: query
+          required: true
+          schema:
+            type: number
+          description: Risk free interest rate
+        - name: d
+          in: query
+          required: true
+          schema:
+            type: number
+          description: Stock's dividend yield
+        - name: sig
+          in: query
+          required: true
+          schema:
+            type: number
+          description: Stock's volatility
+      responses:
+        200:
+          description: Sucessful calculation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties: 
+                    otype:
+                      type: string
+                      example: c
+                      
+                    S:
+                      type: number
+                      example: 100.11
+                    
+                    K:
+                      type: number
+                      example: 100.11
+                      
+                    tm:
+                      type: number
+                      example: 0.5
+                    
+                    r:
+                      type: number
+                      example: 0.05
+                      
+                    d:
+                      type: number
+                      example: 0.03
+                      
+                    sig:
+                      type: number
+                      example: 0.2
+                      
+                    o_price:
+                      type: number
+                      example: 7.50
