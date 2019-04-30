@@ -16,3 +16,4 @@ Please include a list of questions / topics you want to discuss with our panel b
 * What single activity do you spend the most time on during a given day?
 * Does management often disrupt work (Is Dilbert a documentary?)
 * Would you ever hire someone without a LinkedIn?
+* Do you think showing up to an interview, in our indusrty, in a suit and tie is worth the time and effort?
